@@ -1,15 +1,21 @@
 #include <iostream>
 
 int main(){
-    int n, rem;
 
-    std::cout << "please enter a number" << std::endl;
-    std::cin >> n;
+    int n1, n2, perimeter, area;
 
-    rem = n % 2;
 
-    std::cout << "in the following line 0 means evenn and 1 means odd" << std::endl;
-    std::cout << rem << std::endl;
+    std::cout << "Enter first num" << std::endl;
+    std::cin >> n1;
+
+    std::cout << "Enter second num" << std::endl;
+    std::cin >> n2;
+
+    perimeter = 2*(n1 + n2);
+    area = n1 * n2;
+
+    std::cout << "The perimeter is " << perimeter << std::endl;
+    std::cout << "The area is " << area << std::endl;
 
 
 }
