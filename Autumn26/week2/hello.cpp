@@ -13,6 +13,6 @@ int main(){
     std::cout << "what is your surname?" << std::endl;
     std::cin >> user_surname;
 
-    std::cout << "hello," << user_name << " " << user_surname << std::endl;
+    std::cout << "hello, " << user_name << " " << user_surname << std::endl;
 
 }
