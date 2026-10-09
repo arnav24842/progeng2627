@@ -1,25 +1,15 @@
 #include <iostream>
 
 int main(){
-    double a, b, c;
-    
-    a=1;
-    b=2;
-    c = a + b;
+    int n, rem;
 
-    std::cout << c << std::endl;
-    
-    a=2;
+    std::cout << "please enter a number" << std::endl;
+    std::cin >> n;
 
-    std::cout << c << std::endl;
-    // I expect this to print 3
+    rem = n % 2;
 
-    c = a + b;
-
-    std::cout << c << std::endl;
-    // I expect this to print 4
-
-
+    std::cout << "in the following line 0 means evenn and 1 means odd" << std::endl;
+    std::cout << rem << std::endl;
 
 
 }
