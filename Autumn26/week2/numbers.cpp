@@ -1,17 +1,24 @@
 #include <iostream>
 
 int main(){
-    double n1, n2, sum;
+    double a, b, c;
+    
+    a=1;
+    b=2;
+    c = a + b;
 
-    std::cout << "please enter the first number" << std::endl;
-    std::cin >> n1;
+    std::cout << c << std::endl;
+    
+    a=2;
 
-    std::cout << "please enter the second number" << std::endl;
-    std::cin >> n2;
+    std::cout << c << std::endl;
+    // I expect this to print 3
 
-    sum = n1 * n2;
+    c = a + b;
 
-    std::cout << n1 << " * " << n2 << " = " << sum << std::endl;
+    std::cout << c << std::endl;
+    // I expect this to print 4
+
 
 
 
