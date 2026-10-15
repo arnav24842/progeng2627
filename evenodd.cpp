@@ -6,15 +6,15 @@ int main(){
     std::cout << "please enter a number" << std::endl;
     std::cin >> n;
 
-    rem = n % 2;
+    rem = n % 3;
 
     if(rem == 0){
-        std::cout << "the number is even" << std::endl;
+        std::cout << "the number is a multiple of 6" << std::endl;
 
     }
     else{
 
-        std::cout << "the number is odd" << std::endl;
+        std::cout << "the number is not a multiple of 6" << std::endl;
     }
 
 }
