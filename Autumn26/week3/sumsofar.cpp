@@ -1,17 +1,21 @@
 #include <iostream>
 
 int main(){
-    int n, sum;
+    double average, n, sum, counter;
 
+    average = 0;
     sum = 0;
+    counter = 1;
 
     std::cout << "enter a number: " << std::endl;
     std::cin >> n;
 
         while(n != 0){
             sum += n;
-            std::cout << "the sum so far is:" << std::endl;
-            std::cout << sum << std::endl;
+            average = sum/counter;
+            std::cout << "the average so far is:" << std::endl;
+            std::cout << average << std::endl;
+            counter += 1;
             std::cout << "enter a number: " << std::endl;
             std::cin >> n;
         }
