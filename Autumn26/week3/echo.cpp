@@ -1,12 +1,14 @@
 #include <iostream>
+#include <iostream>
 
 int main(){
-    int n;
+    std::string input;
 
-    std::cin >> n;
+    std::cin >> input;
 
-    while( (-11<n) && (n<11) ){
-        std::cin >> n;
-        std::cout << n << std::endl;
+    while( input != "STOP"){
+        std::cout << input << std::endl;
+        std::cin >> input;
+        
     }
 }
