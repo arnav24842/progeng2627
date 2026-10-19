@@ -2,16 +2,16 @@
 
 int main(){
 
-    double x, acc = 1;
+    double x, acc = 0;
     int n, counter =0;
 
     std::cin >> x >> n;
 
     while(counter < n){
-        acc = acc * x;
+        acc = acc + x;
         counter += 1;
     }
 
-    std::cout << x << "^" << n << " = " << acc << std::endl; 
+    std::cout << x << "*" << n << " = " << acc << std::endl; 
 
 }
