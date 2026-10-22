@@ -7,9 +7,12 @@ double mypow(double x, double n){
     if(n<0){
         temp = -1*n;
     }
+    else{
+        temp=n;
+    }
     
 
-    for(int i=0; i<temp; i++){
+    for(int i=0; i<(temp); i++){
         ans= ans*x;
     }
 
@@ -22,16 +25,16 @@ double mypow(double x, double n){
 
 int main(){
     // we test examples with integer (and non-negative) exponent
-double x, n, sum;
+double x, n, sum, temp;
 
     sum=0;
     std::cin >> x;
     std::cin >> n;
 
-    //for(double i=1; i<n+1; i++){
-        sum += mypow(x,n);
+    for(double i=1; i<n+1; i++){
+        sum += mypow(x,i);
 
-    //}
+    }
 
     std::cout << sum << std::endl;
 }
