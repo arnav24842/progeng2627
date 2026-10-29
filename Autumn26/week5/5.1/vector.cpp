@@ -13,7 +13,15 @@ int main(){
     std::cout << v.at(1) << std::endl;
     // this will print 20
 
-    std::cout << v.at(4) << std::endl;
+    v.at(1) = 15;
+
+    std::cout << v.at(1) << std::endl;
+    // this will print 15
+
+    v.at(2) = 2;
     // this will throw an exception
+
+    std::cout << v.at(2) << std::endl;
+    // this will not be executed
 
 }
