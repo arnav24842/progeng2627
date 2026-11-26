@@ -1,18 +1,7 @@
 #include <iostream>
 #include <string>
-#include <cmath>
-#include <cstdlib>
 #include <fstream>
 #include <vector>
-
-
-
-std::string wordPicker(const std::vector<std::string>& words, const int wordNum){
-
-    std::string out;
-    out = words[wordNum];
-    return out;
-}
 
 std::string getRow(const std::vector<std::string>& grid, const int rowNum){
 
